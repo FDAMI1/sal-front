@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": ["vite/client", "node", "@testing-library/jest-dom/vitest"],
+    "paths": {
+      "@api/*": ["./src/shared/api/*"],
+      "@modules/*": ["./src/modules/*"],
+      "@navigation/*": ["./src/navigation/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@config/*": ["./src/config/*"]
+    }
+  },
+  "include": ["src", "vite.config.ts"]
+}

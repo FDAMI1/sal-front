@@ -1,0 +1,11 @@
+node_modules
+dist
+coverage
+
+# Every env file except the example.
+.env
+.env.*
+!.env.example
+
+# Vercel CLI project link and local build output.
+.vercel
